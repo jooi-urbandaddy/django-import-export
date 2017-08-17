@@ -3,7 +3,7 @@
 {% load admin_urls %}
 
 {% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />{% endblock %}
-{% block bodyclass %}{{ block.super }} {{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
+{% block bodyclass %}suit_toggle_changelist_top_actions suit_form_submit_on_right suit_layout_horizontal app-yourapp model-client change-list change-form{% endblock %}
 {% if not is_popup %}
 {% block breadcrumbs %}
 <div class="breadcrumbs">
